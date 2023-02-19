@@ -1,12 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import Heading from './components/Heading';
+import Section from './components/Section';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>Hello React and Typescript World</h1>
-  )
+    <>
+      <Heading title="Hello World" />
+      <Section title='Lorem ipsum dolor '>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sed, natus dolores aliquid distinctio,
+        cupiditate dolorem tenetur soluta maiores quas, cumque doloribus! Cum, cumque vero fuga nemo ad possimus sunt!
+      </Section>
+    </>
+  );
 }
 
-export default App
+export default App;
